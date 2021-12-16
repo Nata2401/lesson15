@@ -12,12 +12,12 @@ DomElement.prototype.newElem = function () {
     if (this.selector[0] === '.') {
         elem = document.createElement('div');
         elem.className = this.selector.slice(1);
-        elem.innerText = 'div с классом';
+        elem.innerText = 'Div с классом';
     }
     if (this.selector[0] === '#') {
         elem = document.createElement('p');
         elem.id = this.selector.slice(1);
-        elem.innerText = 'параграф с id';
+        elem.innerText = 'Параграф с id';
 
     }
     elem.style.cssText = `height: ${this.height}px;
